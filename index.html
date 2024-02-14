@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
-    <main><div>
-        <button onclick="play('pierre')">pierre</button>
-        <button onclick="play('feuille')">papier</button>
-        <button onclick="play('ciseaux')">ciseaux</button>
+    <header>Pierre Feuille Ciseaux</header>
+    <main>
+        <div id="playButtons">
+        <button onclick="play('pierre')">Pierre</button>
+        <button onclick="play('feuille')">Feuille</button>
+        <button onclick="play('ciseaux')">Ciseaux</button>
     </div>
 
-    <button onclick="reset()">Reset Score</button>
+    <button id="reset" onclick="reset()">Reset Score</button>
     <p id="score">
         
     </p>
+
     <script src="script.js"></script>
 </main>
 </body>
